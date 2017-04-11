@@ -21,7 +21,13 @@
     "webpack": "^2.3.3",
     "webpack-dev-server": "^2.4.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "css-loader": "^0.28.0",
+    "file-loader": "^0.11.1",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --content-base src --inline --hot"
@@ -30,7 +36,13 @@
     "type": "git",
     "url": "git+https://github.com/kaioteoi/kaioteoi.com.git"
   },
-  "keywords": [ "Kaio","Teoi","Web","Developer","Portfolio" ],
+  "keywords": [
+    "Kaio",
+    "Teoi",
+    "Web",
+    "Developer",
+    "Portfolio"
+  ],
   "author": "Kaio Teoi <contact@kaioteoi.com> (kaioteoi.com)",
   "license": "ISC",
   "homepage": "https://github.com/kaioteoi/kaioteoi.com#readme",

@@ -7,7 +7,7 @@ module.exports = {
   devtool: debug ? "inline-sourcemap" : false,
   entry: "./js/app.js",
   module: {
-  loaders: [
+    rules: [
       {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
@@ -16,6 +16,13 @@ module.exports = {
           presets: ['react', 'es2015', 'stage-0'],
           plugins: ['react-html-attrs', 'transform-decorators-legacy', 'transform-class-properties'],
         }
+      },{
+        test: /\.sass$/,
+        use: [ 'style-loader', 'css-loader', 'sass-loader' ]
+      },{
+        // Todo: Fix fonts support
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        loader: 'file?name=public/fonts/[name].[ext]'
       }
     ]
   },

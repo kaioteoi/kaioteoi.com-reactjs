@@ -1,6 +1,8 @@
+// React / ReactDOM
 import React from "react";
 import ReactDOM from "react-dom";
 
+// Components
 import Menu from './Main/Menu.jsx';
 import Title from './Main/Title.jsx';
 import Nav from './Main/Nav.jsx';

@@ -1,2 +1,2 @@
-// Prevent node_modules from overloading git commits !
+# Prevent node_modules from overloading git commits !
 node_modules
