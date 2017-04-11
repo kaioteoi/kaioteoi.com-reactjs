@@ -1,0 +1,28 @@
+div.main-title
+  height: 100%
+  width: 100%
+  display: table
+  position: relative
+  z-index: 1
+
+  & h1,h2
+    height: 0
+    transition: 1s
+    display: table-row
+    position: relative
+    vertical-align: middle
+    text-align: center
+    font-family: 'Kanji'
+
+
+  & h1
+    font-size: 2em
+    font-size: 8vw
+
+    @media screen and (min-width: '768px')
+      font-size: 3em
+      font-size: 6vw
+
+    @media screen and (min-width: '991px')
+      font-size: 5em
+      font-size: 4vw

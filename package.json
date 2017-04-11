@@ -1,0 +1,40 @@
+{
+  "name": "kaioteoi.com",
+  "version": "0.0.1",
+  "description": "Practices: Evolving and sharing knowledge.",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-react-html-attrs": "^2.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "history": "^4.6.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-router": "^4.0.0",
+    "react-router-dom": "^4.0.0",
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --content-base src --inline --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaioteoi/kaioteoi.com.git"
+  },
+  "keywords": [ "Kaio","Teoi","Web","Developer","Portfolio" ],
+  "author": "Kaio Teoi <contact@kaioteoi.com> (kaioteoi.com)",
+  "license": "ISC",
+  "homepage": "https://github.com/kaioteoi/kaioteoi.com#readme",
+  "bugs": {
+    "url": "https://github.com/kaioteoi/kaioteoi.com/issues"
+  }
+}
