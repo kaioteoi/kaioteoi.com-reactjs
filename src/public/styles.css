@@ -1,0 +1,130 @@
+.main-wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: #FFFFFF; }
+
+div.main-title {
+  height: 100%;
+  width: 100%;
+  display: table;
+  position: relative;
+  z-index: 1; }
+  div.main-title h1, div.main-title h2 {
+    height: 0;
+    transition: 1s;
+    display: table-row;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Kanji'; }
+  div.main-title h1 {
+    font-size: 2em;
+    font-size: 8vw; }
+    @media screen and (min-width: 768px) {
+      div.main-title h1 {
+        font-size: 3em;
+        font-size: 6vw; } }
+    @media screen and (min-width: 991px) {
+      div.main-title h1 {
+        font-size: 5em;
+        font-size: 4vw; } }
+
+div.menu-button {
+  width: 50px;
+  height: 50px;
+  background-color: #000000;
+  position: fixed;
+  margin-top: 50px;
+  margin-left: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2; }
+
+.menu-options {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  text-align: center; }
+  .menu-options svg {
+    height: 200px;
+    width: 200px;
+    z-index: 0; }
+    .menu-options svg:hover path {
+      fill: #000000; }
+    .menu-options svg path {
+      transition: 1s ease; }
+
+body, div, h1, h2, h3, span, p, section, main {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif; }
+  body:after, body:before, div:after, div:before, h1:after, h1:before, h2:after, h2:before, h3:after, h3:before, span:after, span:before, p:after, p:before, section:after, section:before, main:after, main:before {
+    content: "";
+    display: table;
+    clear: both; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: initial; }
+
+body {
+  height: 100%;
+  width: 100%; }
+
+.hidden-text {
+  visibility: hidden;
+  color: #FFFFFF; }
+
+.hidden-section {
+  visibility: hidden; }
+
+@font-face {
+  font-family: Kanji;
+  src: url(public/fonts/kanji-webfont.eot);
+  src: url(public/fonts/kanji-webfont.eot?#iefix) format("embedded-opentype"), url(public/fonts/kanji-webfont.woff2) format("woff2"), url(public/fonts/kanji-webfont.woff) format("woff"), url(public/fonts/kanji-webfont.ttf) format("truetype"), url(public/fonts/kanji-webfont.svg#svgkanji-webfont) format("svg"); }
+
+@font-face {
+  font-family: OneDay;
+  src: url(public/fonts/oneday-webfont.eot);
+  src: url(public/fonts/oneday-webfont.eot?#iefix) format("embedded-opentype"), url(public/fonts/oneday-webfont.woff2) format("woff2"), url(public/fonts/oneday-webfont.woff) format("woff"), url(public/fonts/oneday-webfont.ttf) format("truetype"), url(public/fonts/oneday-webfont.svg#svgoneday-webfont) format("svg"); }
+
+.floating {
+  -webkit-animation: updown 2s infinite;
+  -moz-animation: updown 2s infinite;
+  -ms-animation: updown 2s infinite;
+  -o-animation: updown 2s infinite;
+  animation: updown 2s infinite; }
+
+@-webkit-keyframes updown {
+  0% {
+    transform: translate(0, 0); }
+  50% {
+    transform: translate(0, -20px); }
+  100% {
+    transform: translate(0, 0); }
+  @-moz-keyframes updown {
+    0% {
+      transform: translate(0, 0); }
+    50% {
+      transform: translate(0, -20px); }
+    100% {
+      transform: translate(0, 0); } }
+  @-o-keyframes updown {
+    0% {
+      transform: translate(0, 0); }
+    50% {
+      transform: translate(0, -20px); }
+    100% {
+      transform: translate(0, 0); } }
+  @keyframes updown {
+    0% {
+      transform: translate(0, 0); }
+    50% {
+      transform: translate(0, -20px); }
+    100% {
+      transform: translate(0, 0); } } }
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJwdWJsaWMvc3R5bGVzLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/

@@ -1,4 +1,5 @@
 var debug = process.env.NODE_ENV !== "production";
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var webpack = require('webpack');
 var path = require('path');
 
@@ -18,11 +19,11 @@ module.exports = {
         }
       },{
         test: /\.sass$/,
-        use: [ 'style-loader', 'css-loader', 'sass-loader' ]
+        loader: ExtractTextPlugin.extract('css-loader!sass-loader!resolve-url-loader')
       },{
         // Todo: Fix fonts support
         test: /\.(eot|svg|ttf|woff|woff2)$/,
-        loader: 'file?name=public/fonts/[name].[ext]'
+        loader: 'file-loader?name=public/fonts/[name].[ext]'
       }
     ]
   },
@@ -30,7 +31,11 @@ module.exports = {
     path: __dirname + "/src/",
     filename: "app.min.js"
   },
-  plugins: debug ? [] : [
+  plugins: debug
+  ? [
+    new ExtractTextPlugin('public/styles.css')
+  ]
+  : [
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),

@@ -1,5 +1,5 @@
 // Stylesheets
-require('./sass/main.sass');
+require('../sass/main.sass');
 
 // Website components
 require('./components/Main.jsx');
