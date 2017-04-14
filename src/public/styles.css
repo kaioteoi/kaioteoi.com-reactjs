@@ -83,13 +83,13 @@ body {
 
 @font-face {
   font-family: Kanji;
-  src: url(public/fonts/kanji-webfont.eot);
-  src: url(public/fonts/kanji-webfont.eot?#iefix) format("embedded-opentype"), url(public/fonts/kanji-webfont.woff2) format("woff2"), url(public/fonts/kanji-webfont.woff) format("woff"), url(public/fonts/kanji-webfont.ttf) format("truetype"), url(public/fonts/kanji-webfont.svg#svgkanji-webfont) format("svg"); }
+  src: url(/fonts/kanji-webfont.eot);
+  src: url(/fonts/kanji-webfont.eot?#iefix) format("embedded-opentype"), url(/fonts/kanji-webfont.woff2) format("woff2"), url(/fonts/kanji-webfont.woff) format("woff"), url(/fonts/kanji-webfont.ttf) format("truetype"), url(/fonts/kanji-webfont.svg#svgkanji-webfont) format("svg"); }
 
 @font-face {
   font-family: OneDay;
-  src: url(public/fonts/oneday-webfont.eot);
-  src: url(public/fonts/oneday-webfont.eot?#iefix) format("embedded-opentype"), url(public/fonts/oneday-webfont.woff2) format("woff2"), url(public/fonts/oneday-webfont.woff) format("woff"), url(public/fonts/oneday-webfont.ttf) format("truetype"), url(public/fonts/oneday-webfont.svg#svgoneday-webfont) format("svg"); }
+  src: url(/fonts/oneday-webfont.eot);
+  src: url(/fonts/oneday-webfont.eot?#iefix) format("embedded-opentype"), url(/fonts/oneday-webfont.woff2) format("woff2"), url(/fonts/oneday-webfont.woff) format("woff"), url(/fonts/oneday-webfont.ttf) format("truetype"), url(/fonts/oneday-webfont.svg#svgoneday-webfont) format("svg"); }
 
 .floating {
   -webkit-animation: updown 2s infinite;
